@@ -58,7 +58,7 @@ parent_chain=SequentialChain(
 
 
 if input_text:
-    st.write(parent_chain({'name':input_text}))
+    st.write(parent_chain({'name':input_text})) ## When we have more than 1 parameter then we probably give it in the form of keys
 
     with st.expander('Person Name'): 
         st.info(person_memory.buffer)
